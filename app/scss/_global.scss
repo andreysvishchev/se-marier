@@ -1,0 +1,17 @@
+body {
+  color: $blue;
+  @extend %proxima-400;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.08em;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
