@@ -10,6 +10,40 @@
 
 <body>
   <header class="header">
+    <div class="header-mobile">
+      <div class="header-mobile__item">
+        <div class="header-mobile__item-box header-mobile__item-box--logo">
+          <a class="header-mobile__logo" href="#">
+            <img src="images/mobile-logo.svg" alt="логотип">
+        </div>
+        </a>
+        <h6 class="header-mobile__title header-mobile__title--logo">se marier</h6>
+      </div>
+      <div class="header-mobile__item">
+        <div class="header-mobile__item-box">
+          <a class="header-mobile__link" href="#">
+            <img src="images/icons/mobile-phone.svg" alt="картинка">
+          </a>
+        </div>
+        <h6 class="header-mobile__title">позвонить</h6>
+      </div>
+      <div class="header-mobile__item">
+        <div class="header-mobile__item-box">
+          <a class="header-mobile__link" href="#">
+            <img src="images/icons/heart.svg" alt="картинка">
+          </a>
+        </div>
+        <h6 class="header-mobile__title">избранное</h6>
+      </div>
+      <div class="header-mobile__item">
+        <div class="header-mobile__item-box">
+          <a class="header-mobile__btn" href="#">
+            <img src="images/icons/Mobile-Menu.svg" alt="картинка">
+          </a>
+        </div>
+        <h6 class="header-mobile__title">меню</h6>
+      </div>
+    </div>
     <div class="container">
       <div class="header-top">
         <div class="header-top__social">
@@ -27,10 +61,39 @@
           <a class="header-top__address-link" href="#">Нижний Новгород, ул. Бекетова, 25</a>
           <a class="header-top__address-phone" href="tel:+79008009090">+7 (900) 800-90-90</a>
         </address>
-        <div class="header-top__logo">
+        <a class="header-top__logo" href="index.html">
           <img class="header-top__logo-img" src="images/header-logo.svg" alt="логотип">
+        </a>
+        <a class="header-top__link modal-link" href="#form">записаться на примерку</a>
+        <div class="modal-box">
+          <form id="form" class="modal-form">
+            <h6 class="modal-form__title">запись <br> на примерку</h6>
+            <p class="modal-form__text">
+              Оставьте ваши контактные данные и наш специалист перезвонит вам
+            </p>
+            <label class="modal-form__label">
+              <h6 class="modal-form__input-title">Ваше имя</h6>
+              <input type="text" class="modal-form__input" name="name" required placeholder="Имя Фамилия">
+            </label>
+            <label class="modal-form__label">
+              <h6 class="modal-form__input-title">Телефон</h6>
+              <input type="text" class="modal-form__input" name="phone" required placeholder="+7(___) ___ - __ - __">
+            </label>
+            <h6 class="modal-form__textarea__title">Комментарий или вопрос</h6>
+            <div class="scrollbar-external">
+              <textarea class="modal-form__textarea" placeholder="текст комментария"></textarea>
+            </div>
+            <button class="modal-form__btn" type="submit">отправить</button>
+            <div class="modal-form__checkbox-box">
+              <label class="modal-form__label">
+                <input type="checkbox" class="modal-form__input-checkbox" checked>
+                <span class="modal-form__checkbox"></span>
+              </label>
+              <span class="modal-form__checkbox-text">Я даю согласие на обработку <a href="#">персональных
+                  данных.</a></span></span>
+            </div>
+          </form>
         </div>
-        <a class="header-top__link" href="#">записаться на примерку</a>
         <a class="header-top__chosen" href="#">
           <img class="header-top__chosen-img" src="images/icons/heart.svg" alt="картинка">
           <span class="header-top__chosen-num">0</span>
@@ -41,16 +104,16 @@
       <div class="container">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--catalog" href="#">Каталог</a>
+            <a class="header-nav__link header-nav__link--catalog" href="catalog.html">Каталог</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Доставка и оплата</a>
+            <a class="header-nav__link" href="delivery.html">Доставка и оплата</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Индивидуальный пошив</a>
+            <a class="header-nav__link" href="individual.html">Индивидуальный пошив</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Контакты</a>
+            <a class="header-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="header-nav__item header-nav__item--sale">
             <a class="header-nav__link" href="#">Распродажа</a>
@@ -64,47 +127,424 @@
       <div class="top-slider__inner">
         <div class="top-slider__item" style="background-image: url('images/top-slider/baner-1.jpg');">
           <div class="container">
-            <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
-            <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных платьев
-              и
-              аксессуаров
-            </p>
-            <a class="top-slider__link" href="#">записаться на примерку</a>
+            <div class="top-slider__content">
+              <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
+              <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных
+                платьев
+                и
+                аксессуаров
+              </p>
+              <a class="top-slider__link modal-link" href="#form">записаться на примерку</a>
+            </div>
           </div>
         </div>
         <div class="top-slider__item" style="background-image: url('images/top-slider/baner-1.jpg');">
           <div class="container">
-            <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
-            <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных платьев
-              и
-              аксессуаров
-            </p>
-            <a class="top-slider__link" href="#">записаться на примерку</a>
+            <div class="top-slider__content">
+              <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
+              <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных
+                платьев
+                и
+                аксессуаров
+              </p>
+              <a class="top-slider__link modal-link" href="#form">записаться на примерку</a>
+            </div>
           </div>
         </div>
         <div class="top-slider__item" style="background-image: url('images/top-slider/baner-1.jpg');">
           <div class="container">
-            <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
-            <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных платьев
-              и
-              аксессуаров
-            </p>
-            <a class="top-slider__link" href="#">записаться на примерку</a>
+            <div class="top-slider__content">
+              <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
+              <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных
+                платьев
+                и
+                аксессуаров
+              </p>
+              <a class="top-slider__link modal-link" href="#form">записаться на примерку</a>
+            </div>
           </div>
         </div>
         <div class="top-slider__item" style="background-image: url('images/top-slider/baner-1.jpg');">
           <div class="container">
-            <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
-            <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных платьев
-              и
-              аксессуаров
-            </p>
-            <a class="top-slider__link" href="#">записаться на примерку</a>
+            <div class="top-slider__content">
+              <h2 class="top-slider__title">идеальное свадебное платье для тебя</h2>
+              <p class="top-slider__text">Салон свадебных платьев Se Marier создает уникальные коллекции свадебных
+                платьев
+                и
+                аксессуаров
+              </p>
+              <a class="top-slider__link modal-link" href="#form">записаться на примерку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-slider">
+        <div class="mobile-slider__inner">
+          <div class="mobile-slider__item" style="background-image: url('images/top-slider/mobile-baner.jpg');">
+            <h2 class="mobile-slider__title"><span>идеальное</span>свадебное платье для тебя</h2>
+            <a class="mobile-slider__link" href="#">записаться на примерку</a>
+          </div>
+          <div class="mobile-slider__item" style="background-image: url('images/top-slider/mobile-baner.jpg');">
+            <h2 class="mobile-slider__title"><span>идеальное</span>свадебное платье для тебя</h2>
+            <a class="mobile-slider__link" href="#">записаться на примерку</a>
+          </div>
+          <div class="mobile-slider__item" style="background-image: url('images/top-slider/mobile-baner.jpg');">
+            <h2 class="mobile-slider__title"><span>идеальное</span>свадебное платье для тебя</h2>
+            <a class="mobile-slider__link" href="#">записаться на примерку</a>
+          </div>
+          <div class="mobile-slider__item" style="background-image: url('images/top-slider/mobile-baner.jpg');">
+            <h2 class="mobile-slider__title"><span>идеальное</span>свадебное платье для тебя</h2>
+            <a class="mobile-slider__link" href="#">записаться на примерку</a>
           </div>
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="main-tabs">
+        <a class="main-tabs__link main-tabs__link--styles" href="#">фасоны</a>
+        <a class="main-tabs__link main-tabs__link--showroom" href="#">шоурум</a>
+        <a class="main-tabs__link main-tabs__link--sewing" href="#">пошив</a>
+      </div>
+    </div>
+    <div class="styles">
+      <div class="container">
+        <h2 class="styles__title title">фасоны</h2>
+        <div class="styles__items">
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/Пляжные.jpg" alt="товар">
+            <h5 class="styles__item-title">пляжные</h5>
+          </a>
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/Пышные.jpg" alt="товар">
+            <h5 class="styles__item-title">пышные</h5>
+          </a>
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/Короткие.jpg" alt="товар">
+            <h5 class="styles__item-title">короткие</h5>
+          </a>
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/А-силуэт.jpg" alt="товар">
+            <h5 class="styles__item-title">а-силуэт</h5>
+          </a>
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/Русалка.jpg" alt="товар">
+            <h5 class="styles__item-title">русалка</h5>
+          </a>
+          <a class="styles__item" href="#">
+            <img class="styles__img" src="images/styles/Прямые.jpg" alt="товар">
+            <h5 class="styles__item-title">прямые</h5>
+          </a>
+        </div>
+        <a class="styles__link" href="#">в каталог</a>
+      </div>
+    </div>
+    <section class="products">
+      <div class="container">
+        <h2 class="title products__title">популярные товары</h2>
+        <div class="products__items">
+          <div class="products__item">
+            <a class="products__item-like" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="#F7F9FF" stroke="#273159" />
+                  <path
+                    d="M24.4076 10.7392C23.3667 9.69822 21.974 9.125 20.4856 9.125C19.2042 9.125 17.9762 9.9568 17 10.7392C16.0098 9.9568 14.8156 9.125 13.5467 9.125C12.0515 9.125 10.6551 9.69847 9.61416 10.7392C8.57322 11.7799 8 13.1729 8 14.661C8 16.1493 8.57322 17.5421 9.61416 18.5828L16.5422 25.5108C16.6685 25.6373 16.8342 25.7005 17 25.7005C17.1653 25.7005 17.3306 25.6375 17.4571 25.5117L24.3908 18.5992C25.4287 17.538 26 16.1433 26 14.6718C26 13.1867 25.4363 11.792 24.4076 10.7392ZM23.4707 17.6877L17.0006 24.1379L10.5297 17.6672C9.73352 16.8708 9.29495 15.8031 9.29495 14.661C9.29495 13.5188 9.73352 12.4511 10.5297 11.6547C11.3261 10.8586 12.3975 10.42 13.5467 10.42C14.6777 10.42 15.7335 11.2673 16.5513 12.0667C16.8047 12.3147 17.2111 12.3125 17.4617 12.0616C18.2581 11.2654 19.3432 10.42 20.4856 10.42C21.628 10.42 22.6955 10.8586 23.4865 11.6495C24.2723 12.4535 24.705 13.5268 24.705 14.6718C24.705 15.8029 24.2648 16.8762 23.4707 17.6877Z"
+                    fill="#273159" />
+                </g>
+              </svg>
+            </a>
+            <a class="sale" href="#">Sale</a>
+            <a href="product-one.html">
+              <img class="products__item-img" src="images/products/1.jpg" alt="товар">
+            </a>
+            <h6 class="products__item-title">se marier</h6>
+            <span class="products__item-price">25 000 р</span>
+            <a class="products__item-link modal-link" href="#form">запись на примерку</a>
+          </div>
+          <div class="products__item">
+            <a class="products__item-like" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="#F7F9FF" stroke="#273159" />
+                  <path
+                    d="M24.4076 10.7392C23.3667 9.69822 21.974 9.125 20.4856 9.125C19.2042 9.125 17.9762 9.9568 17 10.7392C16.0098 9.9568 14.8156 9.125 13.5467 9.125C12.0515 9.125 10.6551 9.69847 9.61416 10.7392C8.57322 11.7799 8 13.1729 8 14.661C8 16.1493 8.57322 17.5421 9.61416 18.5828L16.5422 25.5108C16.6685 25.6373 16.8342 25.7005 17 25.7005C17.1653 25.7005 17.3306 25.6375 17.4571 25.5117L24.3908 18.5992C25.4287 17.538 26 16.1433 26 14.6718C26 13.1867 25.4363 11.792 24.4076 10.7392ZM23.4707 17.6877L17.0006 24.1379L10.5297 17.6672C9.73352 16.8708 9.29495 15.8031 9.29495 14.661C9.29495 13.5188 9.73352 12.4511 10.5297 11.6547C11.3261 10.8586 12.3975 10.42 13.5467 10.42C14.6777 10.42 15.7335 11.2673 16.5513 12.0667C16.8047 12.3147 17.2111 12.3125 17.4617 12.0616C18.2581 11.2654 19.3432 10.42 20.4856 10.42C21.628 10.42 22.6955 10.8586 23.4865 11.6495C24.2723 12.4535 24.705 13.5268 24.705 14.6718C24.705 15.8029 24.2648 16.8762 23.4707 17.6877Z"
+                    fill="#273159" />
+                </g>
+              </svg>
+            </a>
+            <a class="sale" href="#">Sale</a>
+            <a href="product-one.html">
+              <img class="products__item-img" src="images/products/1.jpg" alt="товар">
+            </a>
+            <h6 class="products__item-title">se marier</h6>
+            <span class="products__item-price">25 000 р</span>
+            <a class="products__item-link modal-link" href="#form">запись на примерку</a>
+          </div>
+          <div class="products__item">
+            <a class="products__item-like" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="#F7F9FF" stroke="#273159" />
+                  <path
+                    d="M24.4076 10.7392C23.3667 9.69822 21.974 9.125 20.4856 9.125C19.2042 9.125 17.9762 9.9568 17 10.7392C16.0098 9.9568 14.8156 9.125 13.5467 9.125C12.0515 9.125 10.6551 9.69847 9.61416 10.7392C8.57322 11.7799 8 13.1729 8 14.661C8 16.1493 8.57322 17.5421 9.61416 18.5828L16.5422 25.5108C16.6685 25.6373 16.8342 25.7005 17 25.7005C17.1653 25.7005 17.3306 25.6375 17.4571 25.5117L24.3908 18.5992C25.4287 17.538 26 16.1433 26 14.6718C26 13.1867 25.4363 11.792 24.4076 10.7392ZM23.4707 17.6877L17.0006 24.1379L10.5297 17.6672C9.73352 16.8708 9.29495 15.8031 9.29495 14.661C9.29495 13.5188 9.73352 12.4511 10.5297 11.6547C11.3261 10.8586 12.3975 10.42 13.5467 10.42C14.6777 10.42 15.7335 11.2673 16.5513 12.0667C16.8047 12.3147 17.2111 12.3125 17.4617 12.0616C18.2581 11.2654 19.3432 10.42 20.4856 10.42C21.628 10.42 22.6955 10.8586 23.4865 11.6495C24.2723 12.4535 24.705 13.5268 24.705 14.6718C24.705 15.8029 24.2648 16.8762 23.4707 17.6877Z"
+                    fill="#273159" />
+                </g>
+              </svg>
+            </a>
+            <a class="sale" href="#">Sale</a>
+            <a href="product-one.html">
+              <img class="products__item-img" src="images/products/1.jpg" alt="товар">
+            </a>
+            <h6 class="products__item-title">se marier</h6>
+            <span class="products__item-price">25 000 р</span>
+            <a class="products__item-link modal-link" href="#form">запись на примерку</a>
+          </div>
+          <div class="products__item">
+            <a class="products__item-like" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="#F7F9FF" stroke="#273159" />
+                  <path
+                    d="M24.4076 10.7392C23.3667 9.69822 21.974 9.125 20.4856 9.125C19.2042 9.125 17.9762 9.9568 17 10.7392C16.0098 9.9568 14.8156 9.125 13.5467 9.125C12.0515 9.125 10.6551 9.69847 9.61416 10.7392C8.57322 11.7799 8 13.1729 8 14.661C8 16.1493 8.57322 17.5421 9.61416 18.5828L16.5422 25.5108C16.6685 25.6373 16.8342 25.7005 17 25.7005C17.1653 25.7005 17.3306 25.6375 17.4571 25.5117L24.3908 18.5992C25.4287 17.538 26 16.1433 26 14.6718C26 13.1867 25.4363 11.792 24.4076 10.7392ZM23.4707 17.6877L17.0006 24.1379L10.5297 17.6672C9.73352 16.8708 9.29495 15.8031 9.29495 14.661C9.29495 13.5188 9.73352 12.4511 10.5297 11.6547C11.3261 10.8586 12.3975 10.42 13.5467 10.42C14.6777 10.42 15.7335 11.2673 16.5513 12.0667C16.8047 12.3147 17.2111 12.3125 17.4617 12.0616C18.2581 11.2654 19.3432 10.42 20.4856 10.42C21.628 10.42 22.6955 10.8586 23.4865 11.6495C24.2723 12.4535 24.705 13.5268 24.705 14.6718C24.705 15.8029 24.2648 16.8762 23.4707 17.6877Z"
+                    fill="#273159" />
+                </g>
+              </svg>
+            </a>
+            <a class="sale" href="#">Sale</a>
+            <a href="product-one.html">
+              <img class="products__item-img" src="images/products/1.jpg" alt="товар">
+            </a>
+            <h6 class="products__item-title">se marier</h6>
+            <span class="products__item-price">25 000 р</span>
+            <a class="products__item-link modal-link" href="#form">запись на примерку</a>
+          </div>
+        </div>
+        <a class="products__link" href="#">смотреть все</a>
+      </div>
+    </section>
+    <div class="advantages">
+      <div class="container">
+        <h2 class="advantages__title title">почему стоит выбрать нас</h2>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/icons/Benefit-Icon.svg" alt="картинка">
+            <span class="advantages__item-text">только лучшие материалы</span>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/icons/Benefit-Icon-2.svg" alt="картинка">
+            <span class="advantages__item-text">пошив на заказ</span>
+          </div>
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/icons/Benefit-Icon-3.svg" alt="картинка">
+            <span class="advantages__item-text">всегда актуальные коллекции</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="showroom">
+      <div class="container">
+        <h2 class="showroom__title title">Посетите наш шоурум</h2>
+        <div class="showroom__items">
+          <img class="showroom__img" src="images/image1.jpg" alt="картинка">
+          <img class="showroom__img" src="images/image2.jpg" alt="картинка">
+          <img class="showroom__img" src="images/image3.jpg" alt="картинка">
+        </div>
+        <p class="showroom__text">
+          приглашаем вас в наш шоурум! оцените высокое качество материалов и исполнения, узнайте немного больше о
+          тенденциях в свадебной моде, без спешки подоберите детали и аксессуары в приятной атмосфере, почувствуйте себя
+          принцессой и конечно найдите свое идеальное платье. наш опытный консультант всегда поможет советом и нальет
+          чашечку кофе невесте и сопровождающим.
+        </p>
+        <p class="showroom__text">
+          запишитесь на примерку или позвоните по номеру +7(951) 916-25-46 и наш консультант ответит на любые ваши
+          вопросы. ждем вас в шоуруме по адресу нижний новгород, ул. бекетова, 25
+        </p>
+        <a class="showroom__link modal-link" href="#form">записаться на примерку</a>
+      </div>
+    </section>
+    <div class="baner">
+      <div class="container">
+        <h5 class="baner__title">
+          не нашли то, что искали?
+          закажите индивидуальный пошив
+        </h5>
+        <p class="baner__text">
+          Пришлите нам любое изображение платья, о котором вы мечтаете и наши специалисты помогут воплотить вашу мечту в
+          реальность.
+        </p>
+        <a class="baner__link" href="#">подробнее</a>
+      </div>
+    </div>
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title title">о компании</h2>
+        <div class="about__inner">
+          <div class="about__text">
+            <p>
+              Только лучшее — наш девиз, ведь в день свадьбы все должно быть идеально. Платье должно восхищать невесту,
+              а невеста в нем будет восхищать гостей и конечно жениха.
+            </p>
+            <p>
+              Для того, чтобы наши модели платьев были разнообразными, стильными и соответствовали всем современным
+              тенденциям свадебной французской моды, мы постоянно учимся, посещаем показы мод, анализируем рынок тканей.
+              Эти знания позволяют нам шить для Вас лучшие платья по доступным ценам. Вы можете убедиться в этом изучив
+              наш каталог и посетив шоурум.
+            </p>
+            <p>
+              Также, мы можем изготовить для Вас любое платье под заказ.
+            </p>
+          </div>
+          <img class="about__img" src="images/about.jpg" alt="картинка">
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="map__title title">наш адрес</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.2017569857126!2d44.00432001570827!3d56.29182998070095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d50dd8f7b443%3A0x881fc4d1458d6964!2z0YPQuy4g0JHQtdC60LXRgtC-0LLQsCwgMjUsINCd0LjQttC90LjQuSDQndC-0LLQs9C-0YDQvtC0LCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCA2MDMxNDY!5e0!3m2!1sru!2sru!4v1611322624461!5m2!1sru!2sru"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+    <section class="map-mobile">
+      <div class="container">
+        <h2 class="map__title title">наш адрес</h2>
+        <div class="map-mobile__inner">
+          <h2 class="map__title title">Контакты</h2>
+          <div>
+            <a class="contacts__info-link contacts__info-link--phone" href="tel:+79008009090">+7 (900) 800-90-90</a>
+          </div>
+          <div>
+            <a class="contacts__info-link contacts__info-link--mail"
+              href="mailto:semarier@semarier.ru">semarier@semarier.ru</a>
+          </div>
+          <div>
+            <a class="contacts__info-link contacts__info-link--geo" href="#">Нижний Новгород, ул. Бекетова, 25</a>
+          </div>
+          <h6 class="contacts__info-title">Мы в социальных сетях</h6>
+          <div class="contacts__social">
+            <a class="contacts__social-link" href="#">
+              <img src="images/icons/instagram.svg" alt="картинка">
+            </a>
+            <a class="contacts__social-link" href="#">
+              <img src="images/icons/facebook.svg" alt="картинка">
+            </a>
+            <a class="contacts__social-link" href="#">
+              <img src="images/icons/vk.svg" alt="картинка">
+            </a>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2214.201755867757!2d44.0065087!3d56.29183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d50dd8f7b443%3A0x881fc4d1458d6964!2z0YPQuy4g0JHQtdC60LXRgtC-0LLQsCwgMjUsINCd0LjQttC90LjQuSDQndC-0LLQs9C-0YDQvtC0LCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCA2MDMxNDY!5e0!3m2!1sru!2sru!4v1612178631382!5m2!1sru!2sru"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <img src="images/footer-logo.svg" alt="">
+          <a class="contacts__info-link contacts__info-link--geo contacts__info-link--footer" href="#">Нижний Новгород,
+            ул. Бекетова, 25</a>
+        </div>
+        <div class="footer__item footer__item--desctop">
+          <span class="footer__item-title">каталог</span>
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#">свадебные платья</a>
+            <a class="footer__nav-link" href="#"> вечерние платья</a>
+            <a class="footer__nav-link" href="#">платья подруг невесты</a>
+            <a class="footer__nav-link" href="#"> аксессуары</a>
+          </nav>
+        </div>
+        <div class="footer__item footer__item--desctop">
+          <span class="footer__item-title">Информация</span>
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#">распродажа</a>
+            <a class="footer__nav-link" href="delivery.html"> доставка и оплата</a>
+            <a class="footer__nav-link" href="individual.html">индивидуальный пошив</a>
+            <a class="footer__nav-link" href="contacts.html"> контакты</a>
+          </nav>
+        </div>
+        <div class="footer-mobile">
+          <a class="footer-mobile__btn footer-mobile__catalog-btn" href="#">каталог</a>
+          <div class="footer-mobile__item">
+            <ul class="footer-mobile__list footer-mobile__catalog">
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">свадебные платья</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#"> вечерние платья</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">платья подруг невесты</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#"> аксессуары</a>
+              </li>
+            </ul>
+          </div>
+          <a class="footer-mobile__btn footer-mobile__info-btn" href="#">Информация</a>
+          <div class="footer-mobile__item">
+            <ul class="footer-mobile__list footer-mobile__info">
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">распродажа</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">доставка и оплата</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">индивидуальный пошив</a>
+              </li>
+              <li class="footer-mobile__list-item">
+                <a class="footer-mobile__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__item">
+          <a class="footer__link-btn modal-link" href="#form">записаться на примерку</a>
+          <a class="footer__link footer__link--phone" href="tel:+79008009090">+7 (900) 800-90-90</a>
+          <a class="footer__link footer__link--email" href="mailto:semarier@semarier.ru">semarier@semarier.ru</a>
+          <span class="footer__social">Мы в соц.сетях</span>
+          <a href="" class="footer__social-link">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.6689 10H14.3311C11.9429 10 10 11.9429 10 14.3311V21.6691C10 24.0571 11.9429 26 14.3311 26H21.6691C24.0571 26 26 24.0571 26 21.6691V14.3311C26 11.9429 24.0571 10 21.6689 10ZM18 22.3749C15.5876 22.3749 13.6251 20.4124 13.6251 18C13.6251 15.5876 15.5876 13.6251 18 13.6251C20.4124 13.6251 22.3749 15.5876 22.3749 18C22.3749 20.4124 20.4124 22.3749 18 22.3749ZM22.4795 14.6569C21.7666 14.6569 21.1868 14.077 21.1868 13.3641C21.1868 12.6512 21.7666 12.0713 22.4795 12.0713C23.1924 12.0713 23.7723 12.6512 23.7723 13.3641C23.7723 14.077 23.1924 14.6569 22.4795 14.6569ZM18 14.5631C16.105 14.5631 14.5631 16.1049 14.5631 18C14.5631 19.895 16.105 21.4369 18 21.4369C19.8951 21.4369 21.4369 19.895 21.4369 18C21.4369 16.1049 19.8951 14.5631 18 14.5631ZM22.1248 13.3641C22.1248 13.1686 22.2839 13.0094 22.4795 13.0094C22.6752 13.0094 22.8343 13.1685 22.8343 13.3641C22.8343 13.5598 22.6752 13.7189 22.4795 13.7189C22.2839 13.7189 22.1248 13.5597 22.1248 13.3641Z"
+                fill="#273159" />
+              <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#273159" />
+            </svg>
+
+          </a>
+          <a href="" class="footer__social-link">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.156 9.00641H19.874C19.3017 8.97401 18.7291 9.06473 18.1949 9.27247C17.6607 9.4802 17.1772 9.80011 16.7771 10.2106C16.3771 10.6211 16.0697 11.1126 15.8758 11.652C15.6819 12.1914 15.6059 12.7661 15.653 13.3374V15.3374H13.359C13.2638 15.3374 13.1725 15.3752 13.1051 15.4426C13.0378 15.5099 13 15.6012 13 15.6964V18.5864C13 18.6816 13.0378 18.7729 13.1051 18.8403C13.1725 18.9076 13.2638 18.9454 13.359 18.9454H15.653V26.2454C15.653 26.3406 15.6908 26.4319 15.7581 26.4993C15.8255 26.5666 15.9168 26.6044 16.012 26.6044H19.006C19.0531 26.6044 19.0998 26.5951 19.1434 26.5771C19.1869 26.559 19.2265 26.5326 19.2599 26.4993C19.2932 26.4659 19.3196 26.4263 19.3377 26.3828C19.3557 26.3392 19.365 26.2926 19.365 26.2454V18.9454H22.048C22.0951 18.9454 22.1418 18.9361 22.1854 18.9181C22.2289 18.9 22.2685 18.8736 22.3019 18.8403C22.3352 18.8069 22.3616 18.7673 22.3797 18.7238C22.3977 18.6802 22.407 18.6336 22.407 18.5864V15.6934C22.407 15.6463 22.3977 15.5996 22.3797 15.556C22.3616 15.5125 22.3352 15.4729 22.3019 15.4396C22.2685 15.4062 22.2289 15.3798 22.1854 15.3617C22.1418 15.3437 22.0951 15.3344 22.048 15.3344H19.365V13.6414C19.365 12.8274 19.559 12.4144 20.619 12.4144H22.156C22.2512 12.4144 22.3425 12.3766 22.4099 12.3093C22.4772 12.2419 22.515 12.1506 22.515 12.0554V9.36841C22.5154 9.32101 22.5064 9.27401 22.4885 9.2301C22.4707 9.1862 22.4443 9.14627 22.4109 9.11262C22.3775 9.07896 22.3378 9.05225 22.2941 9.03402C22.2503 9.01579 22.2034 9.00641 22.156 9.00641Z"
+                fill="#273159" />
+              <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#273159" />
+            </svg>
+
+          </a>
+          <a href="" class="footer__social-link">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28.8822 23.7432C28.86 23.6927 28.8352 23.6435 28.8079 23.5958C28.2073 22.6176 27.4702 21.7363 26.6206 20.9804L26.5981 20.9571L26.5864 20.946L26.5746 20.9339H26.5629C26.0742 20.4526 25.7651 20.1291 25.6354 19.9635C25.5236 19.8358 25.4491 19.678 25.4208 19.5084C25.3924 19.3387 25.4112 19.1642 25.4751 19.0052C25.7651 18.4525 26.1107 17.9329 26.5062 17.4551C26.8196 17.0371 27.0679 16.7005 27.251 16.4453C28.5717 14.6277 29.1445 13.4681 28.9692 12.9665L28.9008 12.8484C28.8046 12.7474 28.6808 12.6794 28.546 12.6535C28.3062 12.5919 28.0567 12.582 27.813 12.6242L24.5144 12.6474C24.439 12.628 24.3599 12.6301 24.2857 12.6535L24.1371 12.6888L24.0794 12.7181L24.0335 12.7535C23.9849 12.7871 23.9422 12.8291 23.9074 12.8777C23.8596 12.9404 23.8211 13.0102 23.7931 13.0847C23.4508 14.0033 23.041 14.8935 22.5674 15.7475C22.2847 16.237 22.024 16.6611 21.7856 17.0199C21.6085 17.3005 21.4094 17.5656 21.1903 17.8126C21.0547 17.9576 20.9094 18.0926 20.7554 18.2165C20.6251 18.3195 20.5274 18.3629 20.4622 18.3468L20.2667 18.2993C20.1583 18.2269 20.0695 18.1272 20.0087 18.0095C19.9503 17.8605 19.9061 17.7059 19.8768 17.548C19.8768 17.548 19.8406 17.2027 19.8367 17.0684C19.8328 16.9341 19.8367 16.7452 19.8426 16.4998C19.8484 16.2545 19.8543 16.0899 19.8543 16.003C19.8543 15.7034 19.8598 15.378 19.8709 15.0265C19.882 14.6751 19.8914 14.3971 19.8992 14.1924C19.9071 13.9905 19.911 13.7734 19.911 13.5411C19.9148 13.3608 19.9014 13.1805 19.8709 13.0029C19.8442 12.8725 19.8039 12.7456 19.7507 12.6242C19.7016 12.5076 19.62 12.4087 19.5161 12.3405C19.397 12.2668 19.2673 12.2129 19.132 12.1809C18.623 12.0755 18.1049 12.024 17.5858 12.0274C16.6645 11.9472 15.7367 12.0434 14.8492 12.3112C14.6847 12.4012 14.5373 12.5213 14.4143 12.6656C14.2768 12.8393 14.2576 12.9339 14.3566 12.9494C14.5439 12.9617 14.7269 13.0128 14.8948 13.0995C15.0627 13.1862 15.212 13.3069 15.334 13.4543L15.4024 13.5966C15.4778 13.7704 15.5316 13.9533 15.5627 14.1409C15.6189 14.4255 15.6532 14.7142 15.6653 15.0043C15.7037 15.4967 15.7037 15.9914 15.6653 16.4837C15.6268 16.8943 15.5907 17.2138 15.5568 17.442C15.5329 17.6345 15.4808 17.8221 15.4024 17.9984C15.3618 18.0882 15.3158 18.1752 15.2646 18.2589C15.2499 18.2827 15.2306 18.303 15.2079 18.3185C15.1094 18.3578 15.0047 18.378 14.899 18.3781C14.7557 18.3641 14.6196 18.3065 14.5081 18.2125C14.3329 18.0806 14.1735 17.9277 14.0331 17.7571C13.8271 17.5038 13.6414 17.2336 13.4779 16.9492C13.272 16.6018 13.0583 16.1915 12.8368 15.7183L12.654 15.3749C12.5393 15.1541 12.383 14.8327 12.1849 14.4106C11.9868 13.9885 11.8089 13.5835 11.6512 13.1958C11.5999 13.0432 11.5039 12.9109 11.3766 12.8171L11.3189 12.7817C11.2626 12.7398 11.2012 12.7059 11.1362 12.6808C11.0513 12.645 10.9628 12.6192 10.8723 12.604L7.73396 12.6272C7.61576 12.612 7.49577 12.6243 7.38279 12.6633C7.26982 12.7023 7.16672 12.7669 7.08108 12.8524L7.03514 12.9231C7.00822 12.9823 6.99644 13.0477 7.00093 13.113C7.00557 13.2226 7.02872 13.3306 7.06935 13.4321C7.52545 14.5442 8.02358 15.6169 8.56374 16.6503C9.1039 17.6837 9.57141 18.5158 9.96626 19.1466C10.3631 19.778 10.7677 20.3735 11.1802 20.9329C11.5926 21.4923 11.8656 21.8512 11.9992 22.0094C12.1328 22.1676 12.2377 22.2861 12.3139 22.3648L12.6003 22.6486C12.8521 22.8965 13.122 23.124 13.4076 23.3292C13.7877 23.6102 14.1814 23.8711 14.5873 24.1108C15.0615 24.385 15.5676 24.5958 16.0934 24.7379C16.6368 24.8964 17.2016 24.9626 17.7656 24.9338H19.0831C19.3098 24.9279 19.5261 24.835 19.6901 24.6732L19.736 24.6137C19.7752 24.5455 19.8042 24.4717 19.822 24.3945C19.8497 24.2886 19.8632 24.1791 19.8621 24.0694C19.8517 23.7618 19.8767 23.454 19.9364 23.1525C19.9745 22.9393 20.0402 22.7325 20.1319 22.5375C20.1974 22.4095 20.2803 22.2918 20.3781 22.1881C20.4359 22.1224 20.5016 22.0647 20.5736 22.0164C20.603 22.0006 20.6334 21.9867 20.6645 21.975C20.7787 21.9497 20.8971 21.9532 21.0098 21.9852C21.1224 22.0172 21.2259 22.0767 21.3115 22.1588C21.5717 22.3561 21.8066 22.5869 22.0103 22.8455C22.228 23.1148 22.4886 23.4204 22.7922 23.7624C23.034 24.0421 23.3025 24.2958 23.5937 24.5197L23.8224 24.6621C24.0107 24.7726 24.2107 24.86 24.4186 24.9227C24.6239 24.9985 24.8446 25.019 25.0597 24.9822L27.9918 24.9348C28.2257 24.9477 28.4587 24.8965 28.6672 24.7863C28.7998 24.7204 28.9025 24.6038 28.9536 24.4612C28.9846 24.3287 28.9866 24.1907 28.9594 24.0573C28.9448 23.95 28.919 23.8447 28.8822 23.7432Z"
+                fill="#273159" />
+              <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#273159" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-text">
+          <span>SE MARIER © 2011-2019. Все права защищены.</span>
+          <span>Разработка и продвижение — Daimax Internet Marketing</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.min.js"></script>
 </body>
 

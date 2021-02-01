@@ -1,0 +1,510 @@
+@media (max-width: 1650px) {
+  .top-slider {
+
+    .slick-prev {
+      left: 14%;
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 30%;
+    }
+
+    &__title {
+      font-size: 46px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .top-slider {
+
+    .slick-prev {
+      left: 12%;
+    }
+
+    .slick-next {
+      right: 15%;
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 25%;
+    }
+
+    .slick-dots {
+      li {
+        button {
+
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__title {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-slider {
+    .slick-prev {
+      left: 2%;
+    }
+
+    .slick-next {
+      right: 12%;
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 35%;
+    }
+  }
+
+
+  .header-nav {
+    &__list {
+      font-size: 16px;
+      justify-content: space-evenly;
+    }
+
+    &__item {
+      padding: 10px 10px;
+      font-size: 16px;
+
+      &:nth-child(4) {
+        &::after {
+          width: 0;
+        }
+      }
+
+      &--sale {
+        padding-left: 25px;
+
+        &::before {
+          left: 7px;
+          top: 17px;
+        }
+      }
+
+      &::after {
+        top: 15px;
+      }
+    }
+
+    &__link {
+      padding: 0px 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+    background-color: #EEF2FF;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item-box {
+      height: 50px;
+      width: 50px;
+      border-radius: 4px;
+      border: 1px solid #273159;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+
+      &--logo {
+        border: 1px solid transparent
+      }
+    }
+
+    &__link,
+    &__btn {
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-family: 'ProximaNova-Semibold';
+      font-weight: 600;
+
+      &--logo {
+        text-transform: uppercase;
+        font-family: Noto Serif SC;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .products {
+    margin-bottom: 0px;
+
+    &__items {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .advantages {
+    padding: 40px 0;
+
+    &__items {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .styles,
+  .showroom {
+    display: none;
+  }
+
+  .baner {
+    background-image: url('../images/mobile-baner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 40px;
+    height: 475px;
+    padding: 40px 20px;
+
+    &__title {
+      font-family: 'NotoSerif-Regular';
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: 0.18em;
+      line-height: 26px;
+      margin-bottom: 35px;
+      padding-top: 0;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 50px;
+    }
+
+    &__link {
+      max-width: 280px;
+      margin: 0 auto;
+
+    }
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__text {
+      order: 1;
+    }
+
+    &__img {
+      margin-bottom: 30px;
+    }
+  }
+
+  .header-nav {
+    &__list {
+      display: none;
+    }
+  }
+
+  .main-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__link {
+      display: block;
+      padding: 20px 10px 35px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+      font-family: Noto Serif SC;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #273159;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 6px;
+        background-image: url('../images/icons/down.svg');
+        bottom: 20px;
+        right: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &--styles {
+        background-color: #EEF2FF;
+      }
+
+      &--showroom {
+        background-color: #DAE3FF;
+      }
+
+      &--sewing {
+        background-color: #C8D4FF;
+      }
+    }
+  }
+
+  .map {
+    display: none;
+  }
+
+  .map-mobile {
+    display: block;
+
+    &__inner {
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      margin-top: 25px;
+      max-width: 100%;
+    }
+  }
+
+  .contacts__info-link {
+    display: inline-block;
+
+    &--footer {
+      max-width: 190px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-right: 0;
+      text-align: center;
+
+      &--desctop {
+        display: none;
+      }
+    }
+  }
+
+  .footer-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__item {
+      overflow: hidden;
+      transition: .3s;
+      border-bottom: 1px solid #BDC8ED;
+    }
+
+    &__btn {
+      padding: 12px;
+      width: 100%;
+      display: block;
+      min-height: 46px;
+      text-align: center;
+      font-size: 18px;
+      font-family: Noto Serif SC;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #273159;
+    }
+
+    &__catalog-btn {
+      border-top: 1px solid #BDC8ED;
+    }
+
+    &__list {
+      text-align: center;
+      transition: .3s;
+      height: 0;
+      transform: translateY(-1000%);
+    }
+
+    &__link {
+      padding: 10px 40px;
+      display: block;
+      text-transform: uppercase;
+      color: #273159;
+      font-family: Noto Serif SC;
+      font-weight: 400;
+    }
+
+    &__catalog--active,
+    &__info--active {
+      transform: translateY(0);
+      height: 100%;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .top-slider__inner {
+    display: none;
+  }
+
+  .header-mobile {
+    justify-content: space-around;
+    padding: 10px;
+
+    &__item-box {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__title {
+      font-size: 10px;
+
+      &--logo {
+        font-size: 11px;
+      }
+    }
+
+
+    &__link,
+    &__btn {
+      padding: 0;
+    }
+  }
+
+  .mobile-slider {
+    display: block;
+
+    &__item {
+      color: #fff;
+      padding: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__title {
+      margin-left: 40px;
+      font-size: 18px;
+      font-family: 'NotoSerifSC-Bold';
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      max-width: 220px;
+
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+
+    &__link {
+      display: block;
+      background-color: #FDEBDE;
+      padding: 15px 5px;
+      max-width: 220px;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      color: #273159;
+      font-family: Proxima Nova;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+
+    .slick-dots {
+      li {
+        margin-right: 10px;
+
+        button {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 32px;
+      height: 32px;
+    }
+
+    .slick-prev {
+      left: 25px;
+      background-image: url('../images/icons/mobile-left.svg');
+
+      &:hover {
+        display: none;
+      }
+    }
+
+    .slick-next {
+      right: 30px;
+      background-image: url('../images/icons/mobile-right.svg');
+
+      &:hover {
+        display: none;
+      }
+    }
+  }
+
+  .baner {
+    &__title {
+      max-width: 160px;
+    }
+  }
+}
