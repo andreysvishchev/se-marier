@@ -10,18 +10,6 @@ $(function () {
     }]
   });
 
-  $(".footer-mobile__catalog-btn").on("click", function (e) {
-    e.preventDefault();
-    $(this).toggleClass('footer-mobile__catalog-btn--active');
-    $('.footer-mobile__catalog').toggleClass('footer-mobile__catalog--active');
-  });
-
-  $(".footer-mobile__info-btn").on("click", function (e) {
-    e.preventDefault();
-    $(this).toggleClass('footer-mobile__info-btn--active');
-    $('.footer-mobile__info').toggleClass('footer-mobile__info--active');
-  });
-
   $('.mobile-slider__inner').slick({
     dots: true,
     fade: true,

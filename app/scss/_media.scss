@@ -270,7 +270,7 @@
         content: '';
         position: absolute;
         width: 8px;
-        height: 6px;
+        height: 5px;
         background-image: url('../images/icons/down.svg');
         bottom: 20px;
         right: 50%;
@@ -340,57 +340,10 @@
       }
     }
   }
-
-  .footer-mobile {
+  .accordion-item {
     display: block;
-    width: 100%;
-    margin-bottom: 40px;
-
-    &__item {
-      overflow: hidden;
-      transition: .3s;
-      border-bottom: 1px solid #BDC8ED;
-    }
-
-    &__btn {
-      padding: 12px;
-      width: 100%;
-      display: block;
-      min-height: 46px;
-      text-align: center;
-      font-size: 18px;
-      font-family: Noto Serif SC;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #273159;
-    }
-
-    &__catalog-btn {
-      border-top: 1px solid #BDC8ED;
-    }
-
-    &__list {
-      text-align: center;
-      transition: .3s;
-      height: 0;
-      transform: translateY(-1000%);
-    }
-
-    &__link {
-      padding: 10px 40px;
-      display: block;
-      text-transform: uppercase;
-      color: #273159;
-      font-family: Noto Serif SC;
-      font-weight: 400;
-    }
-
-    &__catalog--active,
-    &__info--active {
-      transform: translateY(0);
-      height: 100%;
-    }
   }
+
 }
 
 
