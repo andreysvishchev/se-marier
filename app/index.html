@@ -36,11 +36,43 @@
         <h6 class="header-mobile__title">избранное</h6>
       </div>
       <div class="header-mobile__item">
-        <div class="header-mobile__item-box">
+        <ul class="header-mobile__menu mobile-menu">
+          <img class="mobile-menu__logo" src="images/mobile-menu.svg" alt="">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--catalog" href="#catalog">каталог</a>
+            <ul class="mobile-menu__drop" id="catalog">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">свадебные платья</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">вечерние платья</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">платья подруг невесты</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">аксессуары</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">распродажа</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">доставка и оплата</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">контакты</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">индивидуальный пошив</a>
+          </li>
+        </ul>
+        <div class="header-mobile__item-box header-mobile__item-btn">
           <a class="header-mobile__btn" href="#">
             <img src="images/icons/Mobile-Menu.svg" alt="картинка">
           </a>
-        </div>
+           </div>
         <h6 class="header-mobile__title">меню</h6>
       </div>
     </div>
@@ -199,13 +231,74 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="main-tabs">
-        <a class="main-tabs__link main-tabs__link--styles" href="#">фасоны</a>
-        <a class="main-tabs__link main-tabs__link--showroom" href="#">шоурум</a>
-        <a class="main-tabs__link main-tabs__link--sewing" href="#">пошив</a>
+   <div class="tabs">
+      <div class="tabs__triggers">
+        <a class="tabs__triggers-item tabs__triggers-item--one" href="#tab-1">фасоны</a>
+        <a class="tabs__triggers-item tabs__triggers-item--two" href="#tab-2">шоурум</a>
+        <a class="tabs__triggers-item tabs__triggers-item--three" href="#tab-3">пошив</a>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__content-inner" id="tab-1">
+          <div class="tabs__content-item tabs__content-item--one">
+            <div class="tabs__nav">
+              <a class="tabs__nav-link" href="#">пляжные</a>
+              <a class="tabs__nav-link" href="#">пышные</a>
+              <a class="tabs__nav-link" href="#">а-силуэт</a>
+              <a class="tabs__nav-link" href="#">прямые</a>
+              <a class="tabs__nav-link" href="#">короткие</a>
+              <a class="tabs__nav-link" href="#">русалка</a>
+            </div>
+            <a class="tabs__link" href="#">перейти в каталог</a>
+          </div>
+          <div class="tabs__roll-box">
+            <div class="tabs__roll">
+              <a class="tabs__roll-link" href="#">свернуть</a>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content-inner" id="tab-2">
+          <div class="tabs__content-item tabs__content-item--two">
+            <p class="tabs__content-text">
+              <span>Приглашаем Вас в наш шоурум!</span>
+              Запишитесь на примерку и наши консультанты помогут Вам подобрать платье и ответят на любые вопросы.
+            </p>
+            <div class="tabs__slide">
+              <div class="tabs__slide-item">
+                <img class="tabs__slide-img" src="images/tabs-slider/1.jpg" alt="картинка">
+              </div>
+              <div class="tabs__slide-item">
+                <img class="tabs__slide-img" src="images/tabs-slider/1.jpg" alt="картинка">
+              </div>
+              <div class="tabs__slide-item">
+                <img class="tabs__slide-img" src="images/tabs-slider/1.jpg" alt="картинка">
+              </div>
+            </div>
+            <a class="tabs__link" href="#">записаться на примерку</a>
+          </div>
+          <div class="tabs__roll-box">
+            <div class="tabs__roll">
+              <a class="tabs__roll-link" href="#">свернуть</a>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content-inner" id="tab-3">
+          <div class="tabs__content-item tabs__content-item--three">
+            <p class="tabs__content-text">
+              Пришлите нам фото платья, которое Вам нравится и мы рассчитаем сроки и стоимость пошива платья вашей
+              мечты.
+            </p>
+            <img class="tabs__img" src="images/tabs-img.jpg" alt="картинка">
+            <a class="tabs__link" href="#">перейти в каталог</a>
+          </div>
+          <div class="tabs__roll-box">
+            <div class="tabs__roll">
+              <a class="tabs__roll-link" href="#">свернуть</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="styles">
       <div class="container">
         <h2 class="styles__title title">фасоны</h2>
