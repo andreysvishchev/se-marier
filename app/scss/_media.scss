@@ -102,6 +102,55 @@
       padding: 0px 10px;
     }
   }
+
+  .catalog {
+    &__filter {
+      max-width: 225px;
+    }
+
+    &__items {
+      grid-gap: 20px 20px;
+    }
+  }
+
+  .product-one {
+    &__info {
+      padding: 20px 20px;
+      width: 370px;
+    }
+
+    &__slide {
+      width: 600px;
+    }
+  }
+
+  .filter-color label {
+    margin-right: 20px;
+  }
+
+  .product-slide {
+
+    .slick-vertical .slick-slide {
+
+      margin-bottom: 20px;
+    }
+
+    &__big {
+      width: 500px;
+
+      .slick-slide {
+        max-height: 675px;
+      }
+
+      img {
+        width: 500px;
+      }
+    }
+
+    &__video {
+      bottom: 190px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -122,6 +171,10 @@
 
   .header-top {
     display: none;
+  }
+
+  .header-mobile {
+    display: block;
   }
 
   .tabs {
@@ -271,6 +324,167 @@
   .accordion-item {
     display: block;
   }
+
+  .catalog {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .filter-item {
+    padding: 10px 10px;
+  }
+
+  .product-one {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info {
+      margin: 0 auto;
+      width: 500px;
+    }
+
+  }
+
+  .product-slide {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 500px;
+
+    &__slide {
+      width: 100%;
+    }
+
+    &__video {
+      display: none;
+    }
+
+    &__big {
+      margin-right: 0;
+    }
+
+    &__thumb {
+      display: none;
+    }
+
+    .slick-list {
+      height: 700px;
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin-right: 7px;
+        line-height: 0;
+        width: 65px;
+        height: 5px;
+        background-color: #BDC8ED;
+        border-radius: 4px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        button {
+          display: none;
+        }
+
+        &.slick-active {
+          background: $blue;
+        }
+      }
+    }
+  }
+
+  .accompanying-mobile,
+  .analog-mobile {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .analog,
+  .accompanying {
+    text-align: center;
+    padding: 40px 0;
+
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .slick-slider {
+      max-width: 400px;
+      position: relative;
+    }
+
+    .slick-arrow {
+      border: none;
+      font-size: 0;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      z-index: 999;
+      opacity: 0.8;
+      top: 42%;
+    }
+
+    .slick-next {
+      background-image: url('../images/icons/mobile-right.svg');
+      right: 48px;
+    }
+
+    .slick-prev {
+      background-image: url('../images/icons/mobile-left.svg');
+      left: 48px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    &__top-title {
+      display: none;
+    }
+
+    &__filter {
+      display: none;
+    }
+
+    &__filter-mobile {
+      display: block;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .catalog {
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .pagination {
+
+    &__link-prev,
+    &__link-next {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -280,7 +494,6 @@
 
   .header-mobile {
     justify-content: space-around;
-    padding: 10px;
 
     &__item-box {
       width: 30px;
@@ -328,6 +541,56 @@
 
     &__nav-link {
       flex-basis: 50%;
+    }
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .breadcrumbs-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-color label {
+    margin-right: 25px;
+  }
+
+  .product-one {
+    &__info {
+      width: 100%;
+    }
+  }
+
+  .analog,
+  .accompanying {
+    .slick-next {
+      right: 22px;
+    }
+
+    .slick-prev {
+      left: 22px;
+    }
+  }
+
+  .product-slide {
+    width: 300px;
+
+    &__big-item {
+      margin-right: 0;
+      width: 315px !important;
+      height: 415px;
+      object-fit: contain;
+    }
+
+    .slick-list {
+      height: 450px;
+    }
+
+    &__big {
+      width: 315px;
     }
   }
 }

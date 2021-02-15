@@ -134,6 +134,11 @@ main {
     border: 1px solid #8E99C5;
     transition: .3s;
 
+    &--mobile {
+      font-size: 16px;
+      padding: 10px 12px;
+    }
+
     &--disabled {
       color: #BDC8ED;
       background-color: #F7F9FF;
@@ -150,6 +155,30 @@ main {
       color: #849AEF;
       text-shadow: 0 0 .9px #849AEF, 0 0 .9px #849AEF, 0 0 .9px #849AEF;
     }
+  }
+}
+
+.breadcrumbs-mobile {
+  display: none;
+
+  &__list {
+    display: flex;
+    margin: 15px 30px;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @extend %notosc-700;
+    font-size: 18px;
+    color: $blue;
+    text-transform: uppercase;
   }
 }
 

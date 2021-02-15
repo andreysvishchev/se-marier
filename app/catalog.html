@@ -10,6 +10,74 @@
 
 <body>
   <header class="header">
+    <div class="header-mobile">
+      <div class="header-mobile__inner">
+        <div class="header-mobile__item">
+          <div class="header-mobile__item-box header-mobile__item-box--logo">
+            <a class="header-mobile__logo" href="#">
+              <img src="images/mobile-logo.svg" alt="логотип">
+          </div>
+          </a>
+          <h6 class="header-mobile__title header-mobile__title--logo">se marier</h6>
+        </div>
+        <div class="header-mobile__item">
+          <div class="header-mobile__item-box">
+            <a class="header-mobile__link" href="#">
+              <img src="images/icons/mobile-phone.svg" alt="картинка">
+            </a>
+          </div>
+          <h6 class="header-mobile__title">позвонить</h6>
+        </div>
+        <div class="header-mobile__item">
+          <div class="header-mobile__item-box">
+            <a class="header-mobile__link" href="#">
+              <img src="images/icons/heart.svg" alt="картинка">
+            </a>
+          </div>
+          <h6 class="header-mobile__title">избранное</h6>
+        </div>
+        <div class="header-mobile__item">
+          <ul class="header-mobile__menu mobile-menu">
+            <img class="mobile-menu__logo" src="images/mobile-menu.svg" alt="">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--catalog" href="#catalog">каталог</a>
+              <ul class="mobile-menu__drop" id="catalog">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">свадебные платья</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">вечерние платья</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">платья подруг невесты</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">аксессуары</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">распродажа</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">доставка и оплата</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">контакты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">индивидуальный пошив</a>
+            </li>
+          </ul>
+          <div class="header-mobile__item-box header-mobile__item-btn">
+            <a class="header-mobile__btn" href="#">
+              <img src="images/icons/Mobile-Menu.svg" alt="картинка">
+            </a>
+          </div>
+          <h6 class="header-mobile__title">меню</h6>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="header-top">
         <div class="header-top__social">
@@ -30,7 +98,36 @@
         <a class="header-top__logo" href="index.html">
           <img class="header-top__logo-img" src="images/header-logo.svg" alt="логотип">
         </a>
-        <a class="header-top__link" href="#">записаться на примерку</a>
+        <a class="header-top__link modal-link" href="#form">записаться на примерку</a>
+        <div class="modal-box">
+          <form id="form" class="modal-form">
+            <h6 class="modal-form__title">запись <br> на примерку</h6>
+            <p class="modal-form__text">
+              Оставьте ваши контактные данные и наш специалист перезвонит вам
+            </p>
+            <label class="modal-form__label">
+              <h6 class="modal-form__input-title">Ваше имя</h6>
+              <input type="text" class="modal-form__input" name="name" required placeholder="Имя Фамилия">
+            </label>
+            <label class="modal-form__label">
+              <h6 class="modal-form__input-title">Телефон</h6>
+              <input type="text" class="modal-form__input" name="phone" required placeholder="+7(___) ___ - __ - __">
+            </label>
+            <h6 class="modal-form__textarea__title">Комментарий или вопрос</h6>
+            <div class="scrollbar-external">
+              <textarea class="modal-form__textarea" placeholder="текст комментария"></textarea>
+            </div>
+            <button class="modal-form__btn" type="submit">отправить</button>
+            <div class="modal-form__checkbox-box">
+              <label class="modal-form__label">
+                <input type="checkbox" class="modal-form__input-checkbox" checked>
+                <span class="modal-form__checkbox"></span>
+              </label>
+              <span class="modal-form__checkbox-text">Я даю согласие на обработку <a href="#">персональных
+                  данных.</a></span></span>
+            </div>
+          </form>
+        </div>
         <a class="header-top__chosen" href="#">
           <img class="header-top__chosen-img" src="images/icons/heart.svg" alt="картинка">
           <span class="header-top__chosen-num">0</span>
@@ -70,8 +167,23 @@
             <a href="#" class="breadcrumbs__link">Каталог</a>
           </li>
         </ul>
-        <h2 class="breadcrumbs__title">Аура</h2>
+        <h2 class="breadcrumbs__title">Каталог</h2>
       </div>
+    </div>
+    <div class="breadcrumbs-mobile">
+      <ul class="breadcrumbs-mobile__list">
+        <li class="breadcrumbs-mobile__item">
+          <a class="breadcrumbs-mobile__link" href=""><svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.71959 14L9.375 12.3667L3.93581 7L9.375 1.63333L7.71959 -1.76263e-06L0.625 7L7.71959 14Z"
+                fill="#273159" />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumbs-mobile__item">
+          <a class="breadcrumbs-mobile__link" href="">Каталог</a>
+        </li>
+      </ul>
     </div>
     <section class="catalog">
       <div class="container">
@@ -79,6 +191,138 @@
           <h4 class="catalog__top-title">категории</h4>
         </div>
         <div class="catalog__inner">
+          <div class="catalog__filter-mobile filter-mobile">
+            <div class="filter-mobile__tabs-content">
+              <div class="filter-mobile__item filter-mobile__item-category">
+                <a class="filter-mobile__trigger filter-mobile__trigger-category" href="#">Категории</a>
+                <form class="filter-mobile__form filter-mobile__form-category">
+                  <input type="checkbox" class="filter-mobile__input filter-mobile__dress-trigger" id="dress">
+                  <label class="filter-mobile__dress-title" for="dress">Свадебные Платья</label>
+                  <div class="filter-mobile__drop filter-mobile__drop-dress">
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">А-силуэт</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Пышные</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Русалка</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Прямые</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Короткие</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Пляжные</span>
+                      </div>
+                    </label>
+                  </div>
+                  <label class="filter-mobile__label">
+                    <input type="checkbox" class="filter-mobile__input">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text">Вечерние платья</span>
+                    </div>
+                  </label>
+                  <label class="filter-mobile__label">
+                    <input type="checkbox" class="filter-mobile__input">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text">Платья подруг невесты</span>
+                    </div>
+                  </label>
+                  <input type="checkbox" class="filter-mobile__input filter-mobile__accessories-trigger"
+                    id="accessories">
+                  <label class="filter-mobile__acces-title" for="accessories">Аксессуары</label>
+                  <div class="filter-mobile__drop filter-mobile__drop-accessories">
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Фаты</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Пояса</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Накидки</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Шубки</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Туфли</span>
+                      </div>
+                    </label>
+                    <label class="filter-mobile__label">
+                      <input type="checkbox" class="filter-mobile__input">
+                      <div class="filter-mobile__checkbox">
+                        <span class="filter-mobile__text">Украшения для волос</span>
+                      </div>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="filter-mobile__item filter-mobile__item-sorting">
+                <a class="filter-mobile__trigger filter-mobile__trigger-sorting" href="#">Сортировать</a>
+                <form action="#" class="filter-mobile__form filter-mobile__form-sorting">
+                  <label class="filter-mobile__label">
+                    <input type="radio" class="filter-mobile__input" name="sort">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text">По возрастанию цены</span>
+                    </div>
+                  </label>
+                  <label class="filter-mobile__label">
+                    <input type="radio" class="filter-mobile__input" name="sort">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text">По убыванию цены</span>
+                    </div>
+                  </label>
+                  <label class="filter-mobile__label">
+                    <input type="radio" class="filter-mobile__input" name="sort">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text">Распродажа</span>
+                    </div>
+                  </label>
+                  <label class="filter-mobile__label">
+                    <input type="radio" class="filter-mobile__input" name="sort">
+                    <div class="filter-mobile__checkbox">
+                      <span class="filter-mobile__text"> Новинки</span>
+                    </div>
+                  </label>
+                </form>
+              </div>
+            </div>
+
+          </div>
           <div class="catalog__filter">
             <div class="filter-item">
               <h4 class="filter-item__title">Свадебные платья</h4>
@@ -356,7 +600,7 @@
             <div class="pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link pagination__link--disabled">Назад</a>
+                  <a href="#" class="pagination__link pagination__link--disabled pagination__link-prev">Назад</a>
                 </li>
                 <li class="pagination__item">
                   <a href="#" class="pagination__link pagination__link--active">1</a>
@@ -374,7 +618,7 @@
                   <a href="#" class="pagination__link">15</a>
                 </li>
                 <li class="pagination__item">
-                  <a href="#" class="pagination__link">Вперед</a>
+                  <a href="#" class="pagination__link pagination__link-next">Вперед</a>
                 </li>
               </ul>
             </div>
@@ -471,7 +715,7 @@
                 fill="#273159" />
               <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#273159" />
             </svg>
-  
+
           </a>
           <a href="" class="footer__social-link">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -480,7 +724,7 @@
                 fill="#273159" />
               <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#273159" />
             </svg>
-  
+
           </a>
           <a href="" class="footer__social-link">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
