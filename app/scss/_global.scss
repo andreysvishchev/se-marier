@@ -93,6 +93,7 @@ main {
     color: #49BDA8;
     @extend %proxima-600;
     position: relative;
+    margin-right: 10px;
 
     &::before {
       content: '';
@@ -163,7 +164,7 @@ main {
 
   &__list {
     display: flex;
-    margin: 15px 30px;
+    margin: 15px 15px;
   }
 
   &__item {

@@ -237,6 +237,7 @@
   padding: 20px 20px 40px 20px;
   max-width: 260px;
   width: 100%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 
   &--active {
     transform: translateY(0);
@@ -286,11 +287,14 @@
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right top;
+  }
+
+  &__content {
+    padding: 90px 0 90px 40px;
   }
 
   &__title {
-    padding-top: 102px;
     font-size: 60px;
     @extend %notosc-400;
     max-width: 750px;
@@ -306,19 +310,13 @@
   }
 
   &__link {
-    padding: 12px 24px;
+    padding: 14px 24px;
     display: inline-block;
     background-color: #FDEBDE;
     @extend %proxima-600;
     font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 102px;
-  }
-
-  &__title,
-  &__link,
-  &__text {
-    margin-left: 75px;
+    color: $blue;
   }
 
   .slick-arrow {
@@ -331,6 +329,7 @@
   .slick-next {
     width: 50px;
     height: 50px;
+    background-size: cover;
     border-radius: 50%;
     z-index: 10;
     background-color: transparent;
@@ -340,7 +339,7 @@
   }
 
   .slick-prev {
-    left: 20%;
+    left: 12%;
     background-image: url('../images/icons/left.svg');
 
     &:hover {
@@ -349,7 +348,7 @@
   }
 
   .slick-next {
-    right: 18%;
+    right: 15%;
     background-image: url('../images/icons/right.svg');
 
     &:hover {
@@ -388,82 +387,6 @@
           background-color: $blue;
         }
       }
-    }
-  }
-}
-
-.mobile-slider {
-  display: none;
-
-  &__item {
-    color: #fff;
-    padding: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__title {
-    margin-left: 40px;
-    font-size: 18px;
-    font-family: 'NotoSerifSC-Bold';
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    max-width: 220px;
-
-    span {
-      display: block;
-      font-weight: 700;
-    }
-  }
-
-  &__link {
-    display: block;
-    background-color: #FDEBDE;
-    padding: 15px 5px;
-    max-width: 220px;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    color: #273159;
-    font-family: Proxima Nova;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-
-  .slick-dots {
-    li {
-      margin-right: 10px;
-
-      button {
-        width: 10px;
-        height: 10px;
-      }
-    }
-  }
-
-  .slick-prev,
-  .slick-next {
-    width: 32px;
-    height: 32px;
-  }
-
-  .slick-prev {
-    left: 25px;
-    background-image: url('../images/icons/mobile-left.svg');
-
-    &:hover {
-      display: none;
-    }
-  }
-
-  .slick-next {
-    right: 30px;
-    background-image: url('../images/icons/mobile-right.svg');
-
-    &:hover {
-      display: none;
     }
   }
 }
@@ -751,19 +674,29 @@
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
+
+    &:nth-child() {
+      margin-right: 30px;
+    }
   }
 
   &__item {
     text-transform: uppercase;
     text-align: center;
-    margin-right: 30px;
     padding: 20px;
-    max-width: 265px;
-    width: 100%;
+    width: 265px;
     background-color: #fff;
     border: 1px solid #BDC8ED;
     position: relative;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+
+    &:nth-child(n) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:hover {
 
@@ -1200,7 +1133,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 60px 30px;
+    grid-gap: 30px 30px;
     margin-bottom: 50px;
   }
 }
@@ -1515,8 +1448,8 @@
     height: 91px;
     position: absolute;
     border: 1px solid #BDC8ED;
-    bottom: 174px;
-    right: 2px;
+    bottom: 175px;
+    right: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1548,6 +1481,7 @@
     top: 42%;
     transition: .3s;
     outline: none;
+    background-size: cover;
   }
 
   .slick-prev {
@@ -1593,17 +1527,17 @@
   }
 
   &__big {
-    width: 555px;
-    max-height: 749px;
+    width: 550px;
+    height: 750px;
     margin-right: 30px;
 
     .slick-slide {
-      max-height: 749px;
+      max-height: 747px;
     }
 
     img {
-      width: 555px;
-      max-height: 749px;
+      width: 550px;
+      height: 750px;
       object-fit: cover;
       margin: 0 auto;
     }
